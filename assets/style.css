@@ -286,3 +286,7 @@ select:focus {
   display: block;
   width: 308px;
 }
+.sendcv1 {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #b77d29;
+  width: 324px;
