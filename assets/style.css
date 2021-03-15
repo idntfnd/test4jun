@@ -216,17 +216,7 @@ select:focus {
   border-color: black;
   outline: 0;
 }
-.styled-select select {
-   background: transparent;
-   width: 268px;
-   padding: 5px;
-   font-size: 16px;
-   line-height: 1;
-   border: 0;
-   border-radius: 0;
-   height: 34px;
-   -webkit-appearance: none;
-   }
+
 /*Кнопка отправить заявку*/
 #submit__request1 {
 
@@ -246,9 +236,79 @@ select:focus {
   height: 27px;
   margin: 0px 85px 12px 94px;
 }
-.dropdownselect {
+/*Стили select и option*/
+  .select-wrap select {
+  	margin: 10px;
+  }
 
-}
+  .select__gap {
+  	margin-left: 7px;
+    margin-bottom: 14px;
+  	color: #000;
+      border: 1px solid #cd8e31;
+  	font-size: 12px;
+    width: 310px;
+    height: 32px;
+  	cursor: pointer;
+    text-align: left;
+  }
+
+  .on.select__gap,
+  .select__gap:hover {
+    color: #55493f;
+  }
+
+  .select__list {
+  	background: transparent;
+      border: 1px solid #cd8e31;
+  	margin: 0px 5px 0 7px;
+  }
+
+  .select__list.on {
+  	display: block;
+  }
+
+   .select__item span {
+    padding: 0px 12px 0 12px;
+  	cursor: pointer;
+      color: #45250a;
+      text-align: left;
+  }
+
+  .select__item.selected,
+  .select__item span:hover {
+  	color: #467797;
+  }
+
+  .select__gap:after {
+  	content: '';
+  	display: block;
+  	width: 10px;
+  	height: 10px;
+  	position: absolute;
+  	right: 15px;
+  	top: 50%;
+  	margin-top: -7px;
+  	border-left: 7px solid transparent;
+  	border-right: 7px solid transparent;
+  	border-top: 14px solid #000;
+
+  	-webkit-transition: all .27s ease-in-out;
+  	     -o-transition: all .27s ease-in-out;
+  	        transition: all .27s ease-in-out;
+
+  	-webkit-transform: rotate(0deg);
+  	    -ms-transform: rotate(0deg);
+  	     -o-transform: rotate(0deg);
+  	        transform: rotate(0deg);
+  }
+
+  .on.select__gap:after {
+  	-webkit-transform: rotate(180deg);
+  	    -ms-transform: rotate(180deg);
+  	     -o-transform: rotate(180deg);
+  	        transform: rotate(180deg);
+  }
 /*Кнопка отправить заявку*/
 .btn__sendcv {
   color: #472800;
@@ -307,3 +367,4 @@ select:focus {
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #b77d29;
   width: 324px;
+}
