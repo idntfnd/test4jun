@@ -12,17 +12,15 @@ $('#profession01').each(function(){
 			selectOption = $this.find('option'),
 			selectOptionLength = selectOption.length,
 			selectedOption = selectOption.filter(':selected'),
-			dur = 100;
+			dur = 1;
 
-		$this.hide();
+		$('#profession01').hide();
 		// Wrap all in select box
 		$('#profession01').wrap('<div class="select"></div>');
 		// Style box
 		$('<div>',{
 			class: 'select__gap',
 			text: 'Должность',
-      textAligt: "left",
-      padding: "12"
 		}).
     insertAfter($this);
 
