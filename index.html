@@ -27,7 +27,7 @@
                 <li><input id="username1" type="text" name="username1" placeholder="ФИО"></li>
 
                 <li><input id="phonenumb1" type="tel" name="phonenumb1" placeholder="Телефон"></li>
-                <select class="profession dropdownselect" placeholder="Няня">
+                <select class="profession dropdownselect" placeholder="Няня" id="profession00">
                     <option class="profession1" type="radio" name="profession" value="Репетитор">
                       <label for="profession1">Репетитор</label>
                     </option>
@@ -44,7 +44,7 @@
                       <label for="profession5">Садовник</label>
                     </option>
                 </select>
-                <select class="schedule dropdownselect" placeholder="График работы">
+                <select class="schedule dropdownselect" id="schedule00" placeholder="График работы">
                   <option id="fullday" type=radio name="schedule" value="Полный день">
                     <label for="fullday">Полный день</label>
                   </option>
@@ -72,11 +72,11 @@
           </span>
           <span class="dropdown2">
             <button input type="button" name="sendcv1" class="btn__sendcv" id="btnsendcvmenu">Отправить резюме</button>
-            <div id="dropdownsendcv1" class="dropdown__content2">
+            <div id="dropdowncontent02" class="dropdown__content2">
               <form class="sendcv1" id="sendcv01" action="index.html" method="post">
                 <li><input id="username2" type="text" name="username2" placeholder="ФИО"></li>
 
-                <li><input id="phonenumb2" type="tel" name="phonenumb1" placeholder="Телефон"></li>
+                <li><input id="phonenumb2" type="text" name="phonenumb1" placeholder="Телефон"></li>
                 <select class="profession dropdownselect" id="profession01">
                     <option class="profession1" type="radio" name="profession" value="Репетитор" placeholder="Должность">
                       <label for="profession1">Репетитор</label>
@@ -94,28 +94,11 @@
                       <label for="profession5">Садовник</label>
                     </option>
                 </select>
-                <select class="schedule dropdownselect" placeholder="График работы">
-                  <option id="fullday" type=radio name="schedule" value="Полный день">
-                    <label for="fullday">Полный день</label>
-                  </option>
-                  <option id="halfday" type=radio name="schedule" value="Пол дня">
-                    <label for id="halfday">Пол дня</label>
-                  </option>
-                  <option id="whatschedule" type=radio name="schedule" value="График работы" selected="selected">
-                    <label for id="whatschedule">График работы</label>
-                  </option>
-                  <option id="hours" type=radio name="schedule" value="несколько часов">
-                    <label for id="hours">несколько часов</label>
-                  </option>
-                  <option id="fulltime" type=radio name="schedule" value="Круглосуточно">
-                    <label for id="fulltime">Круглосуточно</label>
-                  </option>
+                <li><input id="education01" type="text" name="education01" placeholder="Образование"></li>
 
-                </select>
+                <li><input id="attachcv" type="text" name="additionalinfo01" placeholder="Прикрепить резюме"></li>
 
-                <li class="additionalinfo"><textarea id="additionalinfo1" type="text" name="additionalinfo1" placeholder="Дополнительная информация"></textarea></li>
-
-                <button id="submit__request1" type="submit" name="submit__request1">Отправить</button>
+                <button id="submit__sendcv1" type="submit" name="submit__sendcv1">Отправить</button>
               </form>
             </div>
           </span>
