@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewpoint" content="width-device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/style.css">
     <title>Ваш Дом</title>
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-
   </head>
   <body>
     <div class="container">
@@ -28,24 +27,24 @@
                 <li><input id="username1" type="text" name="username1" placeholder="ФИО"></li>
 
                 <li><input id="phonenumb1" type="tel" name="phonenumb1" placeholder="Телефон"></li>
-                <select class="profession" placeholder="Няня">
-                    <option id="profession1" type="radio" name="profession" value="Репетитор">
+                <select class="profession dropdownselect" placeholder="Няня">
+                    <option class="profession1" type="radio" name="profession" value="Репетитор">
                       <label for="profession1">Репетитор</label>
                     </option>
-                    <option id="profession2" type="radio" name="profession" value="Гувернантка">
+                    <option class="profession2" type="radio" name="profession" value="Гувернантка">
                       <label for="profession2">Гувернантка</label>
                     </option>
-                    <option id="profession3" type="radio" name="profession" value="Няня" selected="selected">
+                    <option class="profession3" type="radio" name="profession" value="Няня" selected="selected">
                       <label for="profession3">Няня</label>
                     </option>
-                    <option id="profession4" type="radio" name="profession" value="Водитель">
+                    <option class="profession4" type="radio" name="profession" value="Водитель">
                       <label for="profession4">Водитель</label>
                     </option>
-                    <option id="profession5" type="radio" name="profession" value="Садовник">
+                    <option class="profession5" type="radio" name="profession" value="Садовник">
                       <label for="profession5">Садовник</label>
                     </option>
                 </select>
-                <select class="schedule" placeholder="График работы">
+                <select class="schedule dropdownselect" placeholder="График работы">
                   <option id="fullday" type=radio name="schedule" value="Полный день">
                     <label for="fullday">Полный день</label>
                   </option>
@@ -74,28 +73,28 @@
           <span class="dropdown2">
             <button input type="button" name="sendcv1" class="btn__sendcv" id="btnsend">Отправить резюме</button>
             <div id="dropdownsendcv1" class="dropdown__content2">
-              <form class="sendcv1" action="index.html" method="post">
+              <form class="sendcv1" id="sendcv01" action="index.html" method="post">
                 <li><input id="username2" type="text" name="username2" placeholder="ФИО"></li>
 
                 <li><input id="phonenumb2" type="tel" name="phonenumb1" placeholder="Телефон"></li>
-                <select class="profession" placeholder="Няня">
-                    <option id="profession1" type="radio" name="profession" value="Репетитор">
+                <select class="profession dropdownselect" id="profession01" placeholder="Должность">
+                    <option class="profession1" type="radio" name="profession" value="Репетитор" placeholder="Должность">
                       <label for="profession1">Репетитор</label>
                     </option>
-                    <option id="profession2" type="radio" name="profession" value="Гувернантка">
+                    <option class="profession2" type="radio" name="profession" value="Гувернантка">
                       <label for="profession2">Гувернантка</label>
                     </option>
-                    <option id="profession3" type="radio" name="profession" value="Няня" selected="selected">
+                    <option class="profession3" type="radio" name="profession" value="Няня">
                       <label for="profession3">Няня</label>
                     </option>
-                    <option id="profession4" type="radio" name="profession" value="Водитель">
+                    <option class="profession4" type="radio" name="profession" value="Водитель">
                       <label for="profession4">Водитель</label>
                     </option>
-                    <option id="profession5" type="radio" name="profession" value="Садовник">
+                    <option class="profession5" type="radio" name="profession" value="Садовник">
                       <label for="profession5">Садовник</label>
                     </option>
                 </select>
-                <select class="schedule" placeholder="График работы">
+                <select class="schedule dropdownselect" placeholder="График работы">
                   <option id="fullday" type=radio name="schedule" value="Полный день">
                     <label for="fullday">Полный день</label>
                   </option>
@@ -123,6 +122,8 @@
         </span>
       </div>
     </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+  <script src="assets/jquery.js"></script>
   <script src="assets/script.js"></script>
   </body>
 </html>

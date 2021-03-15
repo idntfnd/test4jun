@@ -4,3 +4,7 @@ btnRequest.onclick = function showRequestMenu() {
       dropRequestMenu.classList.toggle('open'),
       btnRequest.classList.toggle('open')
 };
+//$('.dropdownselect')
+
+let selector = $('selector')
+console.log(selector)

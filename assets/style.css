@@ -78,6 +78,7 @@ body {
   height: 20px;
   margin-top: 7px;
   margin-bottom: 7px;
+  outline: none;
 }
 /*При наведении на кнопку оставить заявку*/
 .btn__request:hover {
@@ -118,6 +119,7 @@ body {
 
   font-family: Verdana;
   letter-spacing: -1px;
+  padding: 0px 0px 0px 9px;
 }
 /*Рамки поля Телефон*/
 #phonenumb1 {
@@ -129,6 +131,7 @@ body {
 
   font-family: Verdana;
   letter-spacing: -1px;
+  padding: 0px 0px 0px 9px;
 }
 /*Рамки для селектора профессия*/
 .profession {
@@ -170,43 +173,40 @@ body {
   letter-spacing: -1px;
   padding: 7px 0px 0px 11px;
 }
-/*Поля ввода ФИО и Телефон*/
-#username1, #phonenumb1 {
-  padding: 0px 0px 0px 10px;
-}
 /*Поля-селекторы должности и графика работы*/
 .profession, .schedule {
-  padding: 0px 0px 0px 8px;
+  padding: 0px 0px 0px 9px;
 }
 /*Кнопка селектора*/
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
+  height: 32px;
   background-image:
     linear-gradient(45deg, transparent 50%, #170d0a 40%, #b8aba5),
     linear-gradient(135deg, #b8aba5, #170d0a 50%, transparent 50%),
-    linear-gradient(#f8e8be, #d99d42, #78470b);
+    linear-gradient(#f8e8be, #d99d42, #f8e8be);
   background-position:
-    calc(100% - 14px) calc(1em + -2px),
-    calc(100% - 4px) calc(1em + -2px),
+    calc(100% - 13px) calc(1em + -3px),
+    calc(100% - 3px) calc(1em + -3px),
     100% 0;
   background-size:
     10px 10px,
     10px 10px,
     2.1em 2.3em;
   background-repeat: no-repeat;
+  outline: none;
 }
 /*Кнопка селектора при нажатии*/
 select:focus {
   background-image:
     linear-gradient(45deg, #b8aba5, #170d0a 50%, transparent 50%),
     linear-gradient(135deg, transparent 50%, #170d0a 40%, #b8aba5),
-    linear-gradient(#78470b, #d99d42, #f8e8be);
+    linear-gradient(#f8e8be, #d99d42, #f8e8be);
   background-position:
-    calc(100% - 4px) calc(1em + -2px),
-    calc(100% - 14px) calc(1em + -2px),
+    calc(100% - 3px) calc(1em + -3px),
+    calc(100% - 13px) calc(1em + -3px),
     100% 0;
   background-size:
     10px 10px,
@@ -216,6 +216,17 @@ select:focus {
   border-color: black;
   outline: 0;
 }
+.styled-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }
 /*Кнопка отправить заявку*/
 #submit__request1 {
 
@@ -235,6 +246,9 @@ select:focus {
   height: 27px;
   margin: 0px 85px 12px 94px;
 }
+.dropdownselect {
+
+}
 /*Кнопка отправить заявку*/
 .btn__sendcv {
   color: #472800;
@@ -247,6 +261,7 @@ select:focus {
 
   width: 175px;
   height: 20px;
+  outline: none;
 }
 /*При наведении на кнопку*/
 .btn__sendcv:hover {
@@ -269,6 +284,7 @@ select:focus {
 
   font-family: Verdana;
   letter-spacing: -1px;
+  padding: 0px 0px 0px 9px;
 }
 /*Поле телефон для оставить резюме*/
 #phonenumb2 {
@@ -280,6 +296,7 @@ select:focus {
 
   font-family: Verdana;
   letter-spacing: -1px;
+  padding: 0px 0px 0px 9px;
 }
 /*Рамки дропменю для отправить резюме*/
 .dropdown__content2 li, .dropdown__content2 select {
