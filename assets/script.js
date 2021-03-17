@@ -1,6 +1,6 @@
 const dropRequestMenu = document.getElementById ('dropdowncontent01');
 const btnRequest = document.getElementById ('btnrequestmenu');
-btnRequest.onclick = function showRequestMenu() {
+btnRequest.onclick = function() {
       dropRequestMenu.classList.toggle('open')
       btnRequest.classList.toggle('open')
 };
@@ -200,7 +200,13 @@ $('#schedule00').each(function(){
 
 const dropSendCvMenu = document.getElementById ('dropdowncontent02');
 const btnSendCv = document.getElementById ('btnsendcvmenu');
-btnSendCv.onclick = function showRequestMenu() {
+btnSendCv.onclick = function() {
       dropSendCvMenu.classList.toggle('open')
       btnSendCv.classList.toggle('open')
+};
+
+const menuItem = document.getElementById ('searchforpersonnel');
+let mainMenuDropItems = document.getElementById ('MenuDropItems');
+menuItem.onclick = function() {
+      mainMenuDropItems.classList.toggle('open')
 };

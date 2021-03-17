@@ -104,15 +104,24 @@
           </span>
         </span>
       </div>
-      <div class="mainmenu">
-        <span>Главная</span>
-        <span>Подобрать Персонал</span>
-        <span>Цены</span>
-        <span id="vashdomlogo"><img src="assets/images/vashdomlogo.png"></span>
-        <span>Оставить заявку</span>
-        <span>Оставить вакансию</span>
-        <span>Контакты</span>
-      </div>
+      <nav class="mainmenu">
+        <ul>
+          <li class="menuitem"><a href="#" id="firstitemmenu" class="menuitemtext1">Главная</a></li>
+          <li class="menuitem"><a href="#" class="menuitemtext2" id="searchforpersonnel">Подобрать Персонал</a>
+            <ul id="MenuDropItems" class="dropitems">
+             <li><a href="#">О нас</a></li>
+             <li><a href="#">Задать вопрос</a></li>
+             <li><a href="#">Это интересно</a></li>
+             <li><a href="#">Отзывы</a></li>
+            </ul>
+          </li>
+          <li class="menuitem"><a href="#" class="menuitemtext1" id="thirditemmenu">Цены</a></li>
+          <li class="menuitem" id="vashdomlogo"><img src="assets/images/vashdomlogo.png"></li>
+          <li class="menuitem"><a href="#" class="menuitemtext2" id="fourthitemmenu">Оставить заявку</a></li>
+          <li class="menuitem"><a href="#" class="menuitemtext2">Оставить вакансию</a></li>
+          <li class="menuitem"><a href="#" id="lastitemmenu" class="menuitemtext1">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
   <script src="assets/jquery.js"></script>

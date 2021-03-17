@@ -27,7 +27,7 @@ body {
 /*Тег топа*/
 .topping {
   background: #4e2c1e;
-  height: 102px;
+  height: 69px;
   width: 924px;
   position: relative;
 }
@@ -423,6 +423,91 @@ body {
 /* Главное меню */
 
 .mainmenu {
+  /* background-color: #e0b478; */
+
+}
+.mainmenu li {
+  list-style: none;
+}
+.mainmenu > ul {
+  display: flex;
+  justify-content: center;
+}
+.mainmenu ul > li a {
+  display: block;
+  background-image: linear-gradient(#e5bb81, #925814);
+  /* padding: 10px 20px 20px 20px; */
+  width: 116px;
+  height: 40px;
+  border: solid 1px #f4e2c8;
+
+  font-family: Verdana;
+  font-size: 9px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
   text-transform: uppercase;
-  background-color: #e0b478;
+  text-align: center;
+}
+.menuitemtext1 {
+  padding: 12px;
+}
+.menuitemtext2 {
+  padding-top: 5px;
+}
+#firstitemmenu{
+  border: solid 1px #f4e2c8;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#lastitemmenu {
+  border: solid 1px #f4e2c8;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#thirditemmenu {
+  border-right: none;
+}
+#fourthitemmenu {
+  border-left: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#vashdomlogo {
+  margin-top: -50px;
+  z-index: 1500;
+  box-shadow: 3px black;
+}
+.mainmenu ul > li a:focus {
+  background-image: linear-gradient(#fff9e0, #e8c478, #fff9e0);
+  color: #a18251;
+  transition: all 0.3s ease;
+}
+.mainmenu li ul {
+  position: absolute;
+  min-width: 192px;
+  background-color: #fcebc6;
+}
+.mainmenu li > ul li a{
+  min-width: 192px;
+  background-image: none;
+  border: none;
+  color: #a18251;
+  padding-left: 10px;
+  padding-top: 7px;
+  max-height: 30px;
+  text-align: left;
+  text-transform: none;
+  font-size: 10px;
+  font-weight: normal;
+
+}
+.mainmenu li > ul li a:hover{
+  background-color: #d8af75;
+}
+.dropitems {
+  display: none;
+}
+.dropitems.open{
+  display: block;
 }
