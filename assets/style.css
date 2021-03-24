@@ -170,9 +170,6 @@ body {
   padding: 7px 0px 0px 11px;
 }
 /*Поля-селекторы должности и графика работы*/
-/* .profession, .schedule {
-  padding: 0px 0px 0px 9px;
-} */
 /*Кнопка селектора*/
 /* select {
   -webkit-appearance: none;
@@ -402,6 +399,7 @@ body {
   letter-spacing: -1px;
   padding: 0px 0px 0px 9px;
 }
+/* Кнопка отправить в отправить резюме */
 #submit__sendcv1 {
 
   background: #e8c478;
@@ -422,21 +420,22 @@ body {
 }
 /* Главное меню */
 
+/* Убрать точки списка*/
 .mainmenu {
-  /* background-color: #e0b478; */
-
+  z-index: 200;
 }
 .mainmenu li {
   list-style: none;
 }
+/* Отцентровать пункты меню */
 .mainmenu > ul {
   display: flex;
   justify-content: center;
 }
+/* Стиль для ссылок меню */
 .mainmenu ul > li a {
   display: block;
   background-image: linear-gradient(#e5bb81, #925814);
-  /* padding: 10px 20px 20px 20px; */
   width: 116px;
   height: 40px;
   border: solid 1px #f4e2c8;
@@ -449,22 +448,27 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+/* Стиль для пуктов с 1 строкой */
 .menuitemtext1 {
   padding: 12px;
 }
+/* Стиль для пунктов с 2 строками */
 .menuitemtext2 {
   padding-top: 5px;
 }
+/* Закругления для первого элемента */
 #firstitemmenu{
   border: solid 1px #f4e2c8;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+/* Закругления для второго элемента */
 #lastitemmenu {
   border: solid 1px #f4e2c8;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+/* Убирает границу */
 #thirditemmenu {
   border-right: none;
 }
@@ -473,21 +477,25 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
+/* Положение лого */
 #vashdomlogo {
   margin-top: -50px;
   z-index: 1500;
   box-shadow: 3px black;
 }
+/* При нажатии на ссылку меню */
 .mainmenu ul > li a:focus {
   background-image: linear-gradient(#fff9e0, #e8c478, #fff9e0);
   color: #a18251;
   transition: all 0.3s ease;
 }
+/* Подпункты */
 .mainmenu li ul {
   position: absolute;
   min-width: 192px;
   background-color: #fcebc6;
 }
+/* Стиль подпунктов */
 .mainmenu li > ul li a{
   min-width: 192px;
   background-image: none;
@@ -498,16 +506,214 @@ body {
   max-height: 30px;
   text-align: left;
   text-transform: none;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: normal;
 
 }
+/* Стиль при наведении на подпункты */
 .mainmenu li > ul li a:hover{
   background-color: #d8af75;
 }
+/* Скрыть затем открыть пункты */
 .dropitems {
   display: none;
 }
 .dropitems.open{
   display: block;
+  z-index: 3000;
+}
+/* Слайдшоу */
+/*  Размер и позиция слайдера*/
+#block-for-slider {
+    width: 924px;
+    margin: 0 auto;
+    margin-top: -45px;
+}
+/* Позиция слайдера и его вид*/
+#viewport {
+    width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+/* Ширина контейнера с изображениями и его анимация */
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 6);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+#slidewrapper ul, #slidewrapper li {
+    margin: 0;
+    padding: 0;
+}
+#slidewrapper li {
+    width: calc(100%/6);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide-img {
+    width: 100%;
+}
+/* Стиль невидимых кнопок */
+#prev-btn, #next-btn {
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    background-color: transparent;
+}
+
+#prev-btn:hover, #next-btn:hover {
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 1px;
+}
+
+#next-btn {
+    right: 1px;
+}
+/* Кнопки навигации */
+#nav-btns {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 12px;
+    height: 12px;
+    background-image: linear-gradient(#775431, #e4b97e, #e2b97f);
+    border-radius: 50%;
+    margin: 10px;
+}
+.slide-nav-btn:hover {
+    background-image: none;
+    background-color: #775431;
+    border: 1px solid #fff;
+	  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #bb9f88;
+        cursor: pointer;
+}
+.pagetitles {
+  position: relative;
+}
+.pagetitles span {
+  display: inline-block;
+  width: 400px;
+  height: 285px;
+  position: relative;
+  padding-left: 50px;
+}
+.houseimage {
+  float: right;
+  padding-bottom: 10px;
+  padding-left: 18px;
+}
+.clockimage {
+  float: left;
+  margin-top: -16px;
+  padding-bottom: 10px;
+  padding-right: 18px;
+}
+.permanentbox {
+  margin: 0 15px 0 30px;
+}
+.permanentbox p {
+  margin-top: 15px;
+}
+.temporarybox p {
+  margin-top: 15px;
+}
+.permanentboxtext {
+  font-size: 12px;
+  font-family: Arial;
+  text-align: justify;
+}
+.temporaryboxtext {
+  font-size: 12px;
+  font-family: Arial;
+  text-align: justify;
+}
+h2 {
+  padding-top: 5px;
+  font-family: Verdana;
+}
+.keyimage {
+  position: absolute;
+  margin: 45px 0 0 295px;
+}
+.permanentbox button {
+  float: right;
+  cursor: pointer;
+
+  background: #e8c478;
+  color: #4e2c1e;
+  font-family: Arial;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+
+  border: 1px;
+  border-radius: 5px;
+  border-color: #f8e8be;
+  background-image: linear-gradient(#fff9e0, #e8c478, #fff9e0);
+
+  width: 125px;
+  height: 25px;
+}
+.permanentbox button:hover {
+  color: #fff;
+  background-image: linear-gradient(#f8e8be, #d99d42, #78470b);
+}
+.temporarybox button {
+  float: left;
+  cursor: pointer;
+
+  background: #e8c478;
+  color: #4e2c1e;
+  font-family: Arial;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+
+  border: 1px;
+  border-radius: 5px;
+  border-color: #f8e8be;
+  background-image: linear-gradient(#fff9e0, #e8c478, #fff9e0);
+
+  width: 125px;
+  height: 25px;
+}
+.temporarybox button:hover {
+  color: #fff;
+  background-image: linear-gradient(#f8e8be, #d99d42, #78470b);
+}
+.clockshadow {
+  position: absolute;
+  margin: 90px 0 0 -130px;
+}
+.decorimage {
+  position: absolute;
+  margin-top: -280px;
+  margin-left: 18px;
 }
