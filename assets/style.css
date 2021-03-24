@@ -656,7 +656,7 @@ body {
 }
 h2 {
   padding-top: 5px;
-  font-family: Verdana;
+  font-family: Garamond;
 }
 .keyimage {
   position: absolute;
@@ -713,7 +713,73 @@ h2 {
   margin: 90px 0 0 -130px;
 }
 .decorimage {
+  z-index: -1;
   position: absolute;
   margin-top: -280px;
   margin-left: 18px;
+}
+.imagesblock {
+  padding-right: 35px;
+  padding-left: 35px;
+}
+.imagesblock img {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px;
+}
+.maintext p {
+  padding-top: 10px;
+  text-align: justify;
+  font-size: 12px;
+}
+.maintext {
+  padding: 30px;
+}
+.bottommenu {
+  background: #4e2c1e;
+  height: 45px;
+  width: 924px;
+  position: relative;
+  right: -224px;
+}
+footer {
+  background-image: linear-gradient(#79573d, #a4825c);
+  height: 45px;
+  width: 924px;
+  position: relative;
+  right: -224px;
+  color: #fff;
+}
+.phonenumber2 {
+  color: #ffffff;
+  font-family: Garamond;
+  font-size: 26px;
+  padding-left: 40px;
+}
+.signature {
+  float: right;
+  font-family: Tahoma;
+  font-size: 11px;
+  position: relative;
+  padding-top: 15px;
+  padding-right: 100px;
+}
+.developerlogo {
+  position: absolute;
+  margin-top: -5px;
+}
+.bottommenu {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 12px;
+  color: #fff;
+}
+.bottommenu span {
+  padding: 16px;
+}
+.bottommenu a {
+ text-decoration: none;
+ color: #fff;
+ font-family: Arial;
+ font-size: 11px;
 }
