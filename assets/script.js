@@ -285,3 +285,67 @@ function prevSlide() {
         slideNow--;
     }
 }
+
+$('#profession02').each(function(){
+
+  		let $this = $(this),
+  			selectOption = $this.find('option'),
+  			selectOptionLength = selectOption.length,
+  			selectedOption = selectOption.filter(':selected'),
+  			dur = 1;
+
+  		$('#profession02').hide();
+
+  		$('#profession02').wrap('<div class="select"></div>');
+
+  		$('<div>',{
+  			class: 'select___gap',
+  			text: 'Няня',
+  		}).
+      insertAfter($this);
+
+  		let selectGap = $this.next('.select___gap'),
+  			caret = selectGap.find('.caret');
+
+  		$('<ul>',{
+  			class: 'select___list'
+  		}).insertAfter(selectGap);
+
+  		let selectList = selectGap.next('.select___list');
+
+  		for(let i = 0; i < selectOptionLength; i++){
+  			$('<li>',{
+  				class: 'select___item',
+  				html: $('<span>',{
+  					text: selectOption.eq(i).text()
+  				})
+  			})
+  			.attr('data-value', selectOption.eq(i).val())
+  			.appendTo(selectList);
+  		}
+
+  		let selectItem = selectList.find('li');
+
+  		selectList.slideUp(0);
+  		selectGap.on('click', function(){
+  			if(!$(this).hasClass('on')){
+  				$(this).addClass('on');
+  				selectList.slideDown(dur);
+
+  				selectItem.on('click', function(){
+  					let chooseItem = $(this).data('value');
+
+  					$('select').val(chooseItem).attr('selected', 'selected');
+  					selectGap.text($(this).find('span').text());
+
+  					selectList.slideUp(dur);
+  					selectGap.removeClass('on');
+  				});
+
+  			} else {
+  				$(this).removeClass('on');
+  				selectList.slideUp(dur);
+  			}
+  		});
+
+  	});

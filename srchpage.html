@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewpoint" content="width-device-width, initial-scale=1">
     <title>Ваш Дом</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/stylesearch.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   </head>
@@ -148,38 +148,105 @@
           </ul>
         </div>
       </div>
-      <div class="pagetitles">
-        <span class="permanentbox">
-          <p>
-            <img src="assets/images/house.png" alt="Домик" class="houseimage">
-            <img src="assets/images/key.png" alt="Ключ" class="keyimage">
-            <h2 class="headersmain">Постоянный <br> персонал</h2>
-              <p class="permanentboxtext">
-                Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не
-                дань моде и не причуды избалованных нежданно свалившимя богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени.
-              </p>
-          </p>
-          <button type="button" href="#" name="more1" class="morebutton">Подробнее</button>
-        </span>
-        <span class="temporarybox">
-          <p>
-            <img src="assets/images/clock.png" alt="Часы" class="clockimage">
-            <img src="assets/images/clockshadow.png" alt="Тень" class="clockshadow">
-            <h2 class="headersmain">Временный <br> персонал</h2>
-              <p class="temporaryboxtext">
-                Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не
-                дань моде и не причуды избалованных нежданно свалившимя богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени.
-              </p>
-          </p>
-          <button type="button" href="#" name="more1" class="morebutton">Подробнее</button>
-        </span>
+      <h2 class="headerseach">Подобрать персонал</h2>
+      <div class="searchmenu">
+        <table>
+          <tr>
+            <td id="textr1d1">Показать только</td>
+            <td class="experience">Стаж от  <input type="number" min="0" max="100"> до <input type="number" min="0" max="100"> лет</td>
+          <td rowspan="2"><button type="button" name="buttonseach" id="btnsearch">Подобрать</button></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="">
+              <select id="profession02" name="">
+                <option class="profession1" type="radio" name="profession" value="Репетитор">
+                  <label for="profession1">Репетитор</label>
+                </option>
+                <option class="profession2" type="radio" name="profession" value="Гувернантка">
+                  <label for="profession2">Гувернантка</label>
+                </option>
+                <option class="profession3" type="radio" name="profession" value="Няня" selected="selected">
+                  <label for="profession3">Няня</label>
+                </option>
+                <option class="profession4" type="radio" name="profession" value="Водитель">
+                  <label for="profession4">Водитель</label>
+                </option>
+                <option class="profession5" type="radio" name="profession" value="Садовник">
+                  <label for="profession5">Садовник</label>
+                </option>
+              </select>
+              </div>
+            </td>
+            <td class="agerange">Возраст от <input type="number" min="0" max="100"> до <input type="number" min="0" max="100"> лет</td>
+          </tr>
+        </table>
       </div>
-      <img src="assets/images/decor.png" alt="Орнамент" class="decorimage">
-      <div class="imagesblock">
-        <img src="assets/images/ph1.png" alt="">
-        <img src="assets/images/ph2.png" alt="">
-        <img src="assets/images/ph3.png" alt="">
-        <img src="assets/images/ph4.png" alt="">
+      <div class="showtable">
+        <table class="personneltable">
+          <thead>
+            <tr>
+              <td class="fio">фио</td>
+              <td class="profes">должность</td>
+              <td class="employeeage">возраст</td>
+              <td class="employeeexp">стаж работы</td>
+            </tr>
+          </thead>
+          <tr>
+            <td class="fio">Лопухова Надежда Александровна</td>
+            <td class="profes">Гувернантка</td>
+            <td class="employeeage">45</td>
+            <td class="employeeexp">15 лет</td>
+          </tr>
+          <tr class="every2nd">
+            <td class="fio">Ермакова Надежда Ивановна</td>
+            <td class="profes">Няня</td>
+            <td class="employeeage">30</td>
+            <td class="employeeexp">5 лет</td>
+          </tr>
+          <tr>
+            <td class="fio">Филимонов Евгений Семенович</td>
+            <td class="profes">Садовник</td>
+            <td class="employeeage">50</td>
+            <td class="employeeexp">20 лет</td>
+          </tr>
+          <tr class="every2nd">
+            <td class="fio">Лопухова Надежда Александровна</td>
+            <td class="profes">Уборщица</td>
+            <td class="employeeage">35</td>
+            <td class="employeeexp">7 лет</td>
+          </tr>
+          <tr>
+            <td class="fio">Миронов Юрий Герасимович</td>
+            <td class="profes">Конюх</td>
+            <td class="employeeage">60</td>
+            <td class="employeeexp">15 лет</td>
+          </tr>
+          <tr class="every2nd">
+            <td class="fio">Новикова Нина Алексеевна</td>
+            <td class="profes">Повар</td>
+            <td class="employeeage">55</td>
+            <td class="employeeexp">30 лет</td>
+          </tr>
+          <tr>
+            <td class="fio">Лопухова Надежда Александровна</td>
+            <td class="profes">Гувернантка</td>
+            <td class="employeeage">45</td>
+            <td class="employeeexp">15 лет</td>
+          </tr>
+          <tr class="every2nd">
+            <td class="fio">Лопухова Надежда Александровна</td>
+            <td class="profes">Гувернантка</td>
+            <td class="employeeage">45</td>
+            <td class="employeeexp">15 лет</td>
+          </tr>
+          <tr>
+            <td class="fio">Лопухова Надежда Александровна</td>
+            <td class="profes">Гувернантка</td>
+            <td class="employeeage">45</td>
+            <td class="employeeexp">15 лет</td>
+          </tr>
+        </table>
       </div>
       <div class="maintext">
         <h1>Заголовок</h1>
@@ -191,7 +258,6 @@
         Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимя богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени. Люди, для которых важно не только вырастить ребенка, но и создать основу.
         </p>
       </div>
-    </div>
     <div class="bottommenu">
       <span>
         <a href="#">ГЛАВНАЯ</a>
@@ -217,7 +283,7 @@
         <a href="#">ЦЕНЫ</a>
       </span>
     </div>
-    <footer class="footermain">
+    <footer>
       <span class="phonenumber2">
         8 (4872) 91-13-45
       </span>
